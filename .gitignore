@@ -4,6 +4,9 @@
 .project
 .classes
 
+# Build
+/target
+
 # Compiled class file
 *.class
 
