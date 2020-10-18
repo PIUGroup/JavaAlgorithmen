@@ -9,6 +9,9 @@ Hier darf jeder der möchte Lösungsalgorithmen hinzufügen.
 Da sich das Repo besonders an Anfänger und durchaus auch jüngere Entwickler richtet, wäre es schön wenn 
 alle in deutscher Sprache dokumentieren.
 
+Für alle die kein Deutsch können, bietet sich die Teilnahme an anderen Projekten an, beispielsweise: https://github.com/TheAlgorithms/Java.
+(For all those who cannot speak German, there are other projects like: https://github.com/TheAlgorithms/Java)
+
 ## Mitarbeit
 
 1. Zunächst benötigst Du einen Github Account.
