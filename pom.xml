@@ -8,13 +8,28 @@
     <artifactId>java-algorithms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.7.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
     <build>
-        <sourceDirectory>.</sourceDirectory>
 
         <plugins>
             <plugin>
@@ -24,6 +39,30 @@
                 <configuration>
                     <release>11</release>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.5.2</version>
+                <!-- https://github.com/hcoles/pitest/issues/284 -->
+                <!-- Need this to support JUnit 5 -->
+                <dependencies>
+                    <dependency>
+                        <groupId>org.pitest</groupId>
+                        <artifactId>pitest-junit5-plugin</artifactId>
+                        <version>0.12</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>pit-report</id>
+                        <!-- optional, this example attached the goal into mvn test phase -->
+                        <phase>test</phase>
+                        <goals>
+                            <goal>mutationCoverage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
 
