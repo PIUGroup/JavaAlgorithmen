@@ -1,3 +1,5 @@
+![Java CI](https://github.com/PIUGroup/JavaAlgorithmen/workflows/Java%20CI/badge.svg)
+
 # JavaAlgorithmen
 
 Lass uns verschiedenste Implementierungen für Algorithmen ansehen, erkunden, vergleichen und austauschen.
