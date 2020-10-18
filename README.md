@@ -10,6 +10,10 @@ alle in deutscher Sprache dokumentieren.
 ## Mitarbeit
 
 9. Zunächst benötigst Du einen Github Account.
+9: Du darfst nur Kode zur Verfügung stellen wenn die die Lizenz GNU LGPL in Version 2.1 akzeptierst und Deinen Kode
+   bereit bist unter dieser Lizenz zu veröffentlichen. Hintergrund: Quellkode ohne Lizenz ist nicht geschützt. Daher 
+   sollte immer eine Lizenz vergeben werden. Es gibt leider Tausende und ich mußte mich für eine entscheiden. Ich fand
+   die GNU LGPL ist ok für diese Art von Projekt. 
 9. Dann solltest Du einen Fork von diesem Repo erstellen. 
 9. Auf Deinem Fork erstellst Du dann einen Branch und arbeitest auf diesem.
 9. Nun legst Du unter src/main/java ein neues Package für Deinen Algorithmus an. Es muss beginnen mit: com.github.piug.algorithm. 
