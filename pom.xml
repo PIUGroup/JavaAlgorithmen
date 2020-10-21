@@ -73,6 +73,7 @@
                             <goal>mutationCoverage</goal>
                         </goals>
                         <configuration>
+                            <!-- exclude property based tests, da nicht sinnvoll mit mutationstests -->
                             <excludedGroups>pbt</excludedGroups>
                         </configuration>
                     </execution>
