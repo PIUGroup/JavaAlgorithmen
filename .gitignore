@@ -6,6 +6,7 @@
 
 # Build
 /target
+/.jqwik-database
 
 # Compiled class file
 *.class
